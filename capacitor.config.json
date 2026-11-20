@@ -1,6 +1,5 @@
 {
   "appId": "com.ljsb.app",
   "appName": "灵境胜杯",
-  "webDir": "dist",
-  "bundledWebRuntime": false
+  "webDir": "dist"
 }

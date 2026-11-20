@@ -7,3 +7,11 @@ dev-dist
 .DS_Store
 *.local
 .trae-html-share-packages/
+
+# Android 签名文件
+*.keystore
+*.jks
+keystore.properties
+
+# 仅用于对照的参考应用
+qitaapp/
