@@ -36,8 +36,6 @@ export interface OutcomeInfo {
   detail: string;
 }
 
-export const APP_PACKAGE_ID = 'com.ljsb.app';
-
 export const MANDATORY_DISCLAIMER =
   '灵境胜杯仅为潮汕筊杯民俗文化模拟娱乐工具，所有结果不构成任何人生、投资、决策建议，请勿迷信。';
 

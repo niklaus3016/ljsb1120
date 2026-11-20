@@ -16,7 +16,7 @@ export default defineConfig(() => {
           id: '/',
           name: '灵境胜杯',
           short_name: '灵境胜杯',
-          description: '潮汕筊杯（圣杯）民俗文化模拟工具，纯本地离线存储，仅供民俗文化娱乐参考。',
+          description: '潮汕筊杯（圣杯）民俗文化模拟工具，纯本地存储，仅供民俗文化娱乐参考。',
           theme_color: '#8B3A2B',
           background_color: '#F7F2E8',
           display: 'standalone',

@@ -48,7 +48,7 @@ export const PrivacyPolicyContent: React.FC = () => (
         </li>
         <li>
           <strong className={strong}>字体资源请求</strong>
-          ：界面字体首次加载时会向 Google Fonts 请求字体文件。该请求与普通网页请求一样包含 IP 地址等常规网络信息，但不包含您在应用内输入的任何内容；字体加载后会由离线缓存保存。
+          ：界面字体首次加载时会向 Google Fonts 请求字体文件。该请求与普通网页请求一样包含 IP 地址等常规网络信息，但不包含您在应用内输入的任何内容；字体加载后会由缓存保存。
         </li>
       </ol>
     </section>

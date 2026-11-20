@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Download, ScrollText, ShieldCheck, Trash2 } from 'lucide-react';
 import type { PWAInstallState } from '../hooks/usePWAInstall';
 import {
-  APP_PACKAGE_ID,
   MANDATORY_DISCLAIMER,
   type AppSettings,
   type BackgroundTexture,
@@ -161,7 +160,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               音效开关
             </h3>
             <p className="mt-0.5 text-xs text-[#7B6356] dark:text-[#9C8A7A]">
-              离线合成抛杯风声、木质落地声与三杯提示音
+              本地合成抛杯风声、木质落地声与三杯提示音
             </p>
           </div>
           <button
@@ -324,7 +323,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
                 安装至手机桌面
               </h3>
               <p className="mt-0.5 text-xs text-[#7B6356] dark:text-[#9C8A7A]">
-                作为独立离线应用运行，无需联网即可随时使用
+                作为独立应用运行，无需联网即可随时使用
               </p>
             </div>
             <button
@@ -351,7 +350,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               隐私政策
             </h3>
             <p className="mt-0.5 text-xs text-[#7B6356] dark:text-[#9C8A7A]">
-              查看纯本地离线运行与权限说明
+              查看纯本地运行与权限说明
             </p>
           </div>
           <button
@@ -414,14 +413,14 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             软件说明 · 关于灵境胜杯
           </h3>
           <span className="text-xs tabular-nums text-[#7B6356] dark:text-[#9C8A7A] whitespace-nowrap">
-            v1.0.0 · {APP_PACKAGE_ID}
+            v1.0.0
           </span>
         </div>
         <p className="text-xs font-medium text-[#8B3A2B] dark:text-[#C86D55]">
           灵境胜杯 · 民俗模拟，仅供娱乐参考
         </p>
         <p className="text-xs leading-relaxed text-[#5C463B] dark:text-[#CBBBA8]">
-          本应用为纯前端本地运行的潮汕筊杯民俗文化模拟工具，核心功能可离线使用，不设账号、不上传任何数据，所有问事日志均保存于本机沙盒存储中。
+          本应用为纯前端本地运行的潮汕筊杯民俗文化模拟工具，核心功能可正常使用，不设账号、不上传任何数据，所有问事日志均保存于本机沙盒存储中。
         </p>
         <p className="text-xs leading-relaxed text-[#7B6356] dark:text-[#9C8A7A]">
           {MANDATORY_DISCLAIMER}
@@ -484,7 +483,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             <p className="mt-2 text-sm text-[#5C463B] dark:text-[#CBBBA8] leading-relaxed">
               1. 点击浏览器底部的「分享」按钮。
               <br />
-              2. 向下滑动并选择「添加到主屏幕」，即可作为独立离线应用打开。
+              2. 向下滑动并选择「添加到主屏幕」，即可作为独立应用打开。
             </p>
             <button
               type="button"
@@ -499,7 +498,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
       {showPrivacyPolicy && (
         <LegalDocumentModal
           title="灵境胜杯隐私政策"
-          subtitle={`应用包名：${APP_PACKAGE_ID} · 更新日期：${LEGAL_UPDATED_AT}`}
+          subtitle={`更新日期：${LEGAL_UPDATED_AT}`}
           onClose={() => setShowPrivacyPolicy(false)}
           footerLabel="我已阅读并知悉"
         >
@@ -509,7 +508,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
       {showAgreement && (
         <LegalDocumentModal
           title="灵境胜杯用户服务协议"
-          subtitle={`应用包名：${APP_PACKAGE_ID} · 更新日期：${LEGAL_UPDATED_AT}`}
+          subtitle={`更新日期：${LEGAL_UPDATED_AT}`}
           onClose={() => setShowAgreement(false)}
           footerLabel="我已阅读并知悉"
         >
