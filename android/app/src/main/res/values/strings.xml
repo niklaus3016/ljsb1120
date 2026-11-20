@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">灵境胜杯</string>
+    <string name="title_activity_main">灵境胜杯</string>
+    <string name="package_name">com.ljsb.app</string>
+    <string name="custom_url_scheme">com.ljsb.app</string>
+</resources>

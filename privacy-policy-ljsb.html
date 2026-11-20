@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="灵境胜杯隐私政策">
+    <title>灵境胜杯隐私政策</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-canvas: #FBF8F1;
+            --bg-elevated: #FBF8F1;
+            --bg-tint: #F1E9DA;
+            --bg-contact: #F5EFE3;
+            --text-primary: #2E1F18;
+            --text-secondary: #5C463B;
+            --text-muted: #7B6356;
+            --accent: #8B3A2B;
+            --border: rgba(92, 70, 59, 0.16);
+            --shadow: 0 8px 28px rgba(46, 31, 24, 0.06);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-canvas: #161210;
+                --bg-elevated: #211B18;
+                --bg-tint: #2D2521;
+                --bg-contact: #2A221E;
+                --text-primary: #EFE6D8;
+                --text-secondary: #CBBBA8;
+                --text-muted: #9C8A7A;
+                --accent: #C86D55;
+                --border: rgba(239, 230, 216, 0.12);
+                --shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+            background: var(--bg-canvas);
+            color: var(--text-secondary);
+            line-height: 1.9;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--bg-elevated);
+            padding: 56px 48px 48px;
+            min-height: 100vh;
+            border-left: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            color: var(--text-primary);
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 32px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .highlight {
+            background: var(--bg-tint);
+            border-left: 2px solid var(--accent);
+            border-radius: 4px 12px 12px 4px;
+            padding: 18px 20px;
+            margin-bottom: 26px;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.95;
+        }
+
+        h2 {
+            color: var(--text-primary);
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            border-bottom: 1px solid var(--border);
+        }
+
+        ol, ul {
+            margin: 0 0 20px 22px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.9;
+            padding-left: 4px;
+        }
+
+        li::marker {
+            color: var(--accent);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .contact {
+            background: var(--bg-contact);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 18px;
+        }
+
+        .contact p {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .contact p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            margin-top: 44px;
+            padding-top: 22px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        .footer p {
+            text-align: center;
+            margin-bottom: 6px;
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        .footer p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 36px 22px 32px;
+                border-left: none;
+                border-right: none;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 15px;
+                margin-top: 30px;
+            }
+
+            p, li {
+                font-size: 13px;
+            }
+
+            .highlight {
+                padding: 16px;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .container {
+                max-width: none;
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>灵境胜杯隐私政策</h1>
+        <p class="subtitle">生效日期：2026年11月20日</p>
+
+        <div class="highlight">
+            <p>欢迎使用「灵境胜杯」。本应用由<strong>深圳丰佰瑞网络科技有限公司</strong>（以下简称“我们”）开发并运营。我们深知个人信息对您的重要性，并严格遵守《中华人民共和国个人信息保护法》等相关法律法规。</p>
+        </div>
+
+        <p>本政策说明「灵境胜杯」如何收集、使用、存储和保护信息，以及您对这些信息享有的权利。请您在使用前仔细阅读并充分理解本政策，特别是加粗内容。如您有任何疑问，可通过文末方式与我们联系。</p>
+
+        <h2>一、我们收集的信息</h2>
+        <ol>
+            <li><strong>不收集个人身份信息</strong>：本应用无需注册或登录，不收集姓名、手机号、身份证号、位置、通讯录、相册等任何可识别您个人身份的信息，也不会将您的问事内容上传至服务器。</li>
+            <li><strong>本地保存的数据</strong>：您主动输入的「心中所问之事」、问事记录（结果、时间、连掷序列）以及个性化设置（主题、底纹、音效、触发方式、静心时长等），仅保存在您设备的浏览器本地存储（localStorage）中。</li>
+            <li><strong>设备权限</strong>：仅在您开启「振动反馈」时调用设备振动；仅在您选择「摇晃投掷」模式时读取运动传感器以识别摇晃动作，不记录、不上传传感器轨迹。本应用不申请定位、相机、麦克风、通讯录或外部存储权限。</li>
+            <li><strong>字体资源请求</strong>：界面字体首次加载时会向 Google Fonts 请求字体文件。该请求与普通网页请求一样包含 IP 地址等常规网络信息，但不包含您在应用内输入的任何内容；字体加载后会由离线缓存保存。</li>
+        </ol>
+
+        <h2>二、我们如何使用信息</h2>
+        <p>上述本地数据仅用于实现掷筊结果展示、连掷统计、记录查看、设置恢复与提示音播放等核心功能。我们不会对您的数据进行画像、分析、广告推送或营销，也不会将其用于本政策未说明的其他用途。</p>
+
+        <h2>三、我们如何共享、转让和公开披露</h2>
+        <ol>
+            <li>我们不会出售、出租或以其他方式向任何第三方共享您的问事内容与记录。</li>
+            <li>本应用未接入第三方统计、广告或用户追踪 SDK，不存在与之相关的数据共享。</li>
+            <li>Google Fonts 仅作为字体资源提供方接收字体请求，不接收您在应用内输入的任何内容。</li>
+            <li>仅在法律法规规定或行政、司法机关依法提出强制性要求时，我们才会依法配合提供必要信息。</li>
+        </ol>
+
+        <h2>四、我们如何存储和保护信息</h2>
+        <ol>
+            <li><strong>存储位置</strong>：本应用无后端服务器，所有业务数据均存储在您的设备本地，不进行云端备份或跨设备同步。</li>
+            <li><strong>保存期限</strong>：数据保存至您主动删除、在「设置」中清除本地记录、卸载应用或清除浏览器站点数据为止；删除后无法恢复。</li>
+            <li><strong>安全提示</strong>：请您妥善保管设备与浏览器账户，避免他人未经授权查看您的本地记录。</li>
+        </ol>
+
+        <h2>五、您的权利</h2>
+        <ol>
+            <li><strong>访问</strong>：可在「记录」页查看全部本地问事记录。</li>
+            <li><strong>更正</strong>：可重新发起问事并保存新的记录。</li>
+            <li><strong>删除</strong>：可删除单条记录、清空全部记录，或通过清除浏览器站点数据彻底删除。</li>
+            <li><strong>撤回同意</strong>：您可停止使用本应用并清除本地数据以撤回同意；撤回不影响撤回前基于您的同意已完成的本地处理。</li>
+            <li><strong>数据导出</strong>：数据完全存储在本地，您可通过设备备份或手动抄录方式自行留存；本应用不提供云端导出。</li>
+        </ol>
+
+        <h2>六、未成年人保护</h2>
+        <p>若您未满 14 周岁，请在监护人指导下阅读本政策，并在取得监护人同意后使用本应用。本应用不收集个人身份信息；如监护人发现有相关信息被误留存，可通过文末邮箱联系我们删除。</p>
+
+        <h2>七、本政策的更新</h2>
+        <p>我们可能根据法律法规或产品功能变化更新本政策，更新后会在应用内公示并修改生效日期。涉及收集范围、使用方式等重大变更时，我们会通过启动弹窗重新征得您的同意；如您不同意更新内容，请停止使用并清除本地数据。</p>
+
+        <h2>八、联系我们</h2>
+        <p>如您对本政策有任何疑问、意见或建议，或需要行使相关权利，请通过以下方式联系：</p>
+        <div class="contact">
+            <p>运营者：深圳丰佰瑞网络科技有限公司</p>
+            <p>电子邮箱：<a href="mailto:Jp182025@163.com">Jp182025@163.com</a></p>
+        </div>
+
+        <div class="footer">
+            <p>感谢您使用灵境胜杯。</p>
+            <p>© 2026 深圳丰佰瑞网络科技有限公司 版权所有</p>
+        </div>
+    </main>
+</body>
+</html>
